@@ -1,6 +1,6 @@
 ## GET INFORMATION ABOUT INSTALLED BASE IN OPENSHIFT - KUBERNETES: 
 
-**GITHUB**:* [https://github.com/maktup/GET-INFORMATION-INSTALLED-BASE-OCP-KUBE.git](https://github.com/maktup/GET-INFORMATION-INSTALLED-BASE-OCP-KUBE.git "https://github.com/maktup/GET-INFORMATION-INSTALLED-BASE-OCP-KUBE.git")*
+**GITHUB**: *[https://github.com/maktup/GET-INFORMATION-INSTALLED-BASE-OCP-KUBE.git](https://github.com/maktup/GET-INFORMATION-INSTALLED-BASE-OCP-KUBE.git "https://github.com/maktup/GET-INFORMATION-INSTALLED-BASE-OCP-KUBE.git")*
 
 ## 1. CONTEXT:
 For those of us who work with clients that manage containerized environments (**OPENSHIFT/KUBERNETES**), it is very important to have the complete details of said environments, to know information about:** OS, ENVIRONMENT, PLATFORM, EXACT VERSIONS, CAPABILITIES**, etc.
