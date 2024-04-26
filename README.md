@@ -9,10 +9,10 @@ For those of us who work with clients that manage containerized environments (**
 ## 2. EXECUTION:
 The execution would be as follows:
 
-    $chmod 777 *.sh
+    $ chmod 777 *.sh
     $ dos2unix *.sh
     $ sed -i 's/\r$//' *.sh
-    $sh ./Script_Main.sh
+    $ sh ./Script_Main.sh
 
 **IMPORTANT: ** The **Script_Main.sh** Shell will internally call the Shell: **Script_getBaseInstalled.sh** to execute through Backgound and generate the Report called: **ReporteCluster.txt **(an example is shared to see how it looks).
 
