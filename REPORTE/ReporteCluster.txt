@@ -1,0 +1,250 @@
+[H[2J[3J20240426163158 - [INFO]: ******************** [START] ********************
+20240426163158 - [INFO]: EXECUTING SCRIPT...
+
+20240426163158 - [INFO]:> [COMMAND #1]: ¿QUE 'PLATAFORMA / S.O / CLOUD' SE TIENE INSTALADA?
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=22.04
+DISTRIB_CODENAME=jammy
+DISTRIB_DESCRIPTION="Ubuntu 22.04.2 LTS"
+PRETTY_NAME="Ubuntu 22.04.2 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.2 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+
+4.4.0-22621-Microsoft
+
+
+20240426163158 - [INFO]:> [COMMAND #2]: ¿QUE VERSIÓN DE 'OPENSHIFT / KUBERNETES' SE TIENE INSTALADA?
+Client Version: 4.11.9
+Kustomize Version: v4.5.4
+Server Version: 4.12.51
+Kubernetes Version: v1.25.16+6df2177
+
+WARNING: This version information is deprecated and will be replaced with the output from kubectl version --short.  Use --output=yaml|json to get the full version.
+Client Version: version.Info{Major:"1", Minor:"26", GitVersion:"v1.26.0", GitCommit:"b46a3f887ca979b1a5d14fd39cb1af43e7e5d12d", GitTreeState:"clean", BuildDate:"2022-12-08T19:58:30Z", GoVersion:"go1.19.4", Compiler:"gc", Platform:"linux/amd64"}
+Kustomize Version: v4.5.7
+Server Version: version.Info{Major:"1", Minor:"25", GitVersion:"v1.25.16+6df2177", GitCommit:"f5b7c3e8faedd51935d77828a5fc72c7540236f4", GitTreeState:"clean", BuildDate:"2024-01-18T12:53:29Z", GoVersion:"go1.19.13 X:strictfipsruntime", Compiler:"gc", Platform:"linux/amd64"}
+
+
+20240426163158 - [INFO]:> [COMMAND #3]: ¿CUANTOS 'NODOS' TIENEN ACTIVOS?
+NAME            STATUS   ROLES           AGE   VERSION            INTERNAL-IP     EXTERNAL-IP      OS-IMAGE                               KERNEL-VERSION                 CONTAINER-RUNTIME
+10.184.15.119   Ready    master,worker   31d   v1.25.16+6df2177   10.184.15.119   169.47.102.151   Red Hat Enterprise Linux 8.9 (Ootpa)   4.18.0-513.18.1.el8_9.x86_64   cri-o://1.25.5-8.rhaos4.12.git1b1a520.el8
+10.184.15.94    Ready    master,worker   31d   v1.25.16+6df2177   10.184.15.94    169.47.102.157   Red Hat Enterprise Linux 8.9 (Ootpa)   4.18.0-513.18.1.el8_9.x86_64   cri-o://1.25.5-8.rhaos4.12.git1b1a520.el8
+10.184.15.97    Ready    master,worker   31d   v1.25.16+6df2177   10.184.15.97    169.47.102.147   Red Hat Enterprise Linux 8.9 (Ootpa)   4.18.0-513.18.1.el8_9.x86_64   cri-o://1.25.5-8.rhaos4.12.git1b1a520.el8
+
+
+20240426163158 - [INFO]:> [COMMAND #4]: ¿CUANTA 'CPU/MEMORIA' SE TIENE ASIGNADO & EN USO POR CADA 'VIRTUAL MACHINE'?
+NAME            CPU(cores)   CPU%   MEMORY(bytes)   MEMORY%   
+10.184.15.119   3437m        21%    15716Mi         55%       
+10.184.15.94    1407m        8%     12068Mi         42%       
+10.184.15.97    2115m        13%    12229Mi         43%       
+
+NAME            CPU(cores)   CPU%   MEMORY(bytes)   MEMORY%   
+10.184.15.119   3437m        21%    15716Mi         55%       
+10.184.15.94    1407m        8%     12068Mi         42%       
+10.184.15.97    2105m        13%    12242Mi         43%       
+
+NODE            CPU   MEMORY
+10.184.15.119   16    32884860Ki
+10.184.15.94    16    32884836Ki
+10.184.15.97    16    32884840Ki
+
+10.184.15.119	16	31.36Mi
+10.184.15.94	16	31.36Mi
+10.184.15.97	16	31.36Mi
+
+
+20240426163158 - [INFO]:> [COMMAND #5]: ¿CUANTO 'STORAGE' (PV) & QUE TIPO SE TIENE UTILIZANDO EN EL CLUSTER?
+NAME                                       CAPACITY   CLAIM                                        STATUS   USED
+pvc-06a227a7-df4c-4ea0-9f7a-e4b665cc7937   20Gi       dblogs-inst-apic-ptl-e4933941-db-0           Bound    <none>
+pvc-136a710c-b121-4f11-8a97-54ba28fe97fc   120Gi      inst-apic-mgmt-7a3088fd-postgres-pgbr-repo   Bound    <none>
+pvc-1384257a-5817-4ab8-8866-53e8bc443b3c   20Gi       db-inst-apic-ptl-c283b932-db-0               Bound    <none>
+pvc-2f7855a7-19c5-4086-ace4-a56ee983e6b5   20Gi       data-inst-ee-tdp-zookeeper-1                 Bound    <none>
+pvc-428cfc19-4449-4a4e-a4c5-53bad7cbc6d6   120Gi      inst-apic-mgmt-7a3088fd-postgres             Bound    <none>
+pvc-42d43380-a608-40cf-9c98-db527af3399c   20Gi       dblogs-inst-apic-ptl-c283b932-db-0           Bound    <none>
+pvc-50cade16-fd6c-4087-a513-fa5ef76dec35   20Gi       data-inst-ee-tdp-kafka-2                     Bound    <none>
+pvc-51088a5d-f1bb-4a81-a447-dacb6f00ecec   20Gi       web-inst-apic-ptl-4ef524b8-www-0             Bound    <none>
+pvc-51d805b7-afa6-43fb-a91c-be36a07a8479   30Gi       inst-apic-mgmt-b3098c3d-postgres-wal         Bound    <none>
+pvc-5786c089-cd5b-489a-bb75-4e9fc0b405fb   20Gi       web-inst-apic-ptl-e4933941-www-0             Bound    <none>
+pvc-63d4b5f3-c3e1-4df2-ad4a-c53ea0a2f91b   20Gi       admin-inst-apic-ptl-c283b932-www-0           Bound    <none>
+pvc-6420e867-6968-458d-b4e7-a53001fb518e   50Gi       data-inst-apic-a7s-ingestion-0               Bound    <none>
+pvc-6d8b16a0-32e4-47ef-a047-ac3c49a29b7a   20Gi       backup-inst-apic-ptl-c283b932-www-0          Bound    <none>
+pvc-74dd3cb3-1ccb-4cde-a513-a2ed55bfb910   20Gi       data-inst-ee-tdp-zookeeper-2                 Bound    <none>
+pvc-8918cce3-d5b2-493f-b13e-f07ba84b2be6   20Gi       data-inst-ee-tdp-zookeeper-0                 Bound    <none>
+pvc-8bde27ee-b3bc-4455-8c01-7bfb53ea2fc7   20Gi       backup-inst-apic-ptl-e4933941-www-0          Bound    <none>
+pvc-8dec2142-52a1-45ec-accf-0f89abb14a77   20Gi       db-inst-apic-ptl-e4933941-db-0               Bound    <none>
+pvc-93dc763a-5fbc-435b-b261-93e576704c2c   120Gi      inst-apic-mgmt-b3098c3d-postgres             Bound    <none>
+pvc-9e43c125-02dd-4038-8ecd-2d51ac2dc969   20Gi       db-inst-apic-ptl-4ef524b8-db-0               Bound    <none>
+pvc-a3045189-2c8a-485d-8034-50a43a039ea5   20Gi       backup-inst-apic-ptl-4ef524b8-www-0          Bound    <none>
+pvc-a3f39d7f-3bfa-4407-b50a-4378f5ba6a24   20Gi       web-inst-apic-ptl-c283b932-www-0             Bound    <none>
+pvc-a68c7f4a-80d4-4a4c-a9f4-0859cf7ea204   20Gi       dblogs-inst-apic-ptl-4ef524b8-db-0           Bound    <none>
+pvc-b076411d-8db8-414a-ba2a-ead2942a0797   20Gi       data-inst-ee-tdp-kafka-1                     Bound    <none>
+pvc-b6ed7a3b-1394-4030-ba87-da0b6e5b9d1d   20Gi       datadir-zen-metastoredb-1                    Bound    <none>
+pvc-bb0caf8b-3954-4028-a175-b40ceb5c43e1   200Gi      data-inst-apic-a7s-storage-0                 Bound    <none>
+pvc-bdac9e04-71f3-4d06-a861-b53ae30596bb   100Gi      image-registry-storage                       Bound    <none>
+pvc-ca5b55f7-33e3-4ad8-86df-d4ae5ff54424   20Gi       datadir-zen-metastoredb-2                    Bound    <none>
+pvc-cad544b8-4b6b-4c0a-b54e-6715d7cf8fb3   20Gi       admin-inst-apic-ptl-e4933941-www-0           Bound    <none>
+pvc-cd952841-c216-418f-b050-ffc1aa4f5e1c   20Gi       nginx-inst-apic-ptl-nginx-0                  Bound    <none>
+pvc-d6b643d4-f046-4cd7-ba97-9b6524c90ef6   20Gi       user-home-pvc                                Bound    <none>
+pvc-db7db46d-90ae-4b63-98ff-a998a47c3526   120Gi      inst-apic-mgmt-b3098c3d-postgres-pgbr-repo   Bound    <none>
+pvc-e36668c8-064f-4aa6-b80d-2a094f1045ce   20Gi       datadir-zen-metastoredb-0                    Bound    <none>
+pvc-ec372bb5-d56b-4819-a4fd-f0c485c22bae   20Gi       data-inst-ee-tdp-kafka-0                     Bound    <none>
+pvc-ef9b8f7d-2ace-498b-98a3-a4684d2a546f   20Gi       mongodbdir-icp-mongodb-0                     Bound    <none>
+pvc-f8e6c5d1-da4d-4b83-a4fa-1d379168ec8a   20Gi       admin-inst-apic-ptl-4ef524b8-www-0           Bound    <none>
+pvc-fcddcfdc-cb73-4658-99f7-1052928eda5b   30Gi       inst-apic-mgmt-7a3088fd-postgres-wal         Bound    <none>
+
+NAME                                       STORAGE_CLASS
+pvc-06a227a7-df4c-4ea0-9f7a-e4b665cc7937   ibmc-block-gold
+pvc-136a710c-b121-4f11-8a97-54ba28fe97fc   ibmc-block-gold
+pvc-1384257a-5817-4ab8-8866-53e8bc443b3c   ibmc-block-gold
+pvc-2f7855a7-19c5-4086-ace4-a56ee983e6b5   ibmc-block-gold
+pvc-428cfc19-4449-4a4e-a4c5-53bad7cbc6d6   ibmc-block-gold
+pvc-42d43380-a608-40cf-9c98-db527af3399c   ibmc-block-gold
+pvc-50cade16-fd6c-4087-a513-fa5ef76dec35   ibmc-block-gold
+pvc-51088a5d-f1bb-4a81-a447-dacb6f00ecec   ibmc-block-gold
+pvc-51d805b7-afa6-43fb-a91c-be36a07a8479   ibmc-block-gold
+pvc-5786c089-cd5b-489a-bb75-4e9fc0b405fb   ibmc-block-gold
+pvc-63d4b5f3-c3e1-4df2-ad4a-c53ea0a2f91b   ibmc-block-gold
+pvc-6420e867-6968-458d-b4e7-a53001fb518e   ibmc-block-gold
+pvc-6d8b16a0-32e4-47ef-a047-ac3c49a29b7a   ibmc-block-gold
+pvc-74dd3cb3-1ccb-4cde-a513-a2ed55bfb910   ibmc-block-gold
+pvc-8918cce3-d5b2-493f-b13e-f07ba84b2be6   ibmc-block-gold
+pvc-8bde27ee-b3bc-4455-8c01-7bfb53ea2fc7   ibmc-block-gold
+pvc-8dec2142-52a1-45ec-accf-0f89abb14a77   ibmc-block-gold
+pvc-93dc763a-5fbc-435b-b261-93e576704c2c   ibmc-block-gold
+pvc-9e43c125-02dd-4038-8ecd-2d51ac2dc969   ibmc-block-gold
+pvc-a3045189-2c8a-485d-8034-50a43a039ea5   ibmc-block-gold
+pvc-a3f39d7f-3bfa-4407-b50a-4378f5ba6a24   ibmc-block-gold
+pvc-a68c7f4a-80d4-4a4c-a9f4-0859cf7ea204   ibmc-block-gold
+pvc-b076411d-8db8-414a-ba2a-ead2942a0797   ibmc-block-gold
+pvc-b6ed7a3b-1394-4030-ba87-da0b6e5b9d1d   ibmc-file-gold-gid
+pvc-bb0caf8b-3954-4028-a175-b40ceb5c43e1   ibmc-block-gold
+pvc-bdac9e04-71f3-4d06-a861-b53ae30596bb   ibmc-file-gold
+pvc-ca5b55f7-33e3-4ad8-86df-d4ae5ff54424   ibmc-file-gold-gid
+pvc-cad544b8-4b6b-4c0a-b54e-6715d7cf8fb3   ibmc-block-gold
+pvc-cd952841-c216-418f-b050-ffc1aa4f5e1c   ibmc-block-gold
+pvc-d6b643d4-f046-4cd7-ba97-9b6524c90ef6   ibmc-file-gold-gid
+pvc-db7db46d-90ae-4b63-98ff-a998a47c3526   ibmc-block-gold
+pvc-e36668c8-064f-4aa6-b80d-2a094f1045ce   ibmc-file-gold-gid
+pvc-ec372bb5-d56b-4819-a4fd-f0c485c22bae   ibmc-block-gold
+pvc-ef9b8f7d-2ace-498b-98a3-a4684d2a546f   ibmc-block-gold
+pvc-f8e6c5d1-da4d-4b83-a4fa-1d379168ec8a   ibmc-block-gold
+pvc-fcddcfdc-cb73-4658-99f7-1052928eda5b   ibmc-block-gold
+
+
+20240426163158 - [INFO]:> [COMMAND #6]: ¿CUANTAS CAPACIDADES DE 'CLOUD-PAK' TIENE INSTALADO?
+NAME                                                      AGE
+cloud-native-postgresql.ibm-common-services               3d19h
+datapower-operator.cp4i                                   3d20h
+ibm-apiconnect.cp4i                                       3d20h
+ibm-cert-manager-operator.cp4i                            29d
+ibm-cert-manager-operator.ibm-common-services             31d
+ibm-common-service-operator.cp4i                          31d
+ibm-common-service-operator.ibm-common-services           31d
+ibm-commonui-operator-app.ibm-common-services             31d
+ibm-eventstreams.cp4i                                     31d
+ibm-iam-operator.ibm-common-services                      31d
+ibm-ingress-nginx-operator-app.ibm-common-services        31d
+ibm-integration-platform-navigator.cp4i                   31d
+ibm-management-ingress-operator-app.ibm-common-services   31d
+ibm-mongodb-operator-app.ibm-common-services              31d
+ibm-monitoring-grafana-operator-app.ibm-common-services   31d
+ibm-mq.cp4i                                               31d
+ibm-namespace-scope-operator.ibm-common-services          31d
+ibm-odlm.ibm-common-services                              31d
+ibm-platform-api-operator-app.ibm-common-services         31d
+ibm-zen-operator.ibm-common-services                      31d
+
+
+20240426163158 - [INFO]:> [COMMAND #7]: ¿CUANTAS INSTANCIAS DE: 'MQ' SE TIENE INSTALADO?
+No resources found
+
+
+20240426163158 - [INFO]:> [COMMAND #8]: ¿CUANTAS INSTANCIAS DE: 'IBM APP CONNECT' SE TIENE INSTALADO?
+error: the server doesn't have a resource type "Dashboard"
+
+error: the server doesn't have a resource type "IntegrationServer"
+
+error: the server doesn't have a resource type "IntegrationRuntime"
+
+
+20240426163158 - [INFO]:> [COMMAND #9]: ¿CUANTAS INSTANCIAS DE: 'IBM API CONNECT' & COMPONENTES SE TIENE INSTALADO?
+NAMESPACE   NAME                                                          READY   STATUS    VERSION    RECONCILED VERSION   AGE
+cp4i        analyticscluster.analytics.apiconnect.ibm.com/inst-apic-a7s   5/5     Running   10.0.5.7   10.0.5.7-7267        95m
+
+NAMESPACE   NAME                                             READY   STATUS    VERSION    RECONCILED VERSION   MESSAGE                                                                            AGE
+cp4i        apiconnectcluster.apiconnect.ibm.com/inst-apic   3/7     Pending   10.0.5.7                        API Connect cluster installation in progress - see status conditions for details   128m
+
+NAMESPACE   NAME                                              PHASE     READY   SUMMARY                           VERSION     AGE
+cp4i        datapowerservice.datapower.ibm.com/inst-apic-gw   Running   True    StatefulSet replicas ready: 1/1   10.5.0.10   94m
+
+NAMESPACE   NAME                                              PHASE     LAST EVENT   WORK PENDING   WORK IN-PROGRESS   AGE
+cp4i        datapowermonitor.datapower.ibm.com/inst-apic-gw   Running                false          false              94m
+
+NAMESPACE   NAME                                                     READY   STATUS    VERSION    RECONCILED VERSION   AGE
+cp4i        gatewaycluster.gateway.apiconnect.ibm.com/inst-apic-gw   2/2     Running   10.0.5.7   10.0.5.7-7267        95m
+
+NAMESPACE   NAME                                                                        STATUS     MESSAGE                                                     AGE
+cp4i        managementdbupgrade.management.apiconnect.ibm.com/inst-apic-mgmt-up-bgrnd   Complete   Fresh install is Complete (DB Schema/data are up-to-date)   119m
+
+NAMESPACE   NAME                                                             READY   STATUS    VERSION    RECONCILED VERSION   MESSAGE                                                          AGE
+cp4i        managementcluster.management.apiconnect.ibm.com/inst-apic-mgmt   18/19   Pending   10.0.5.7   10.0.5.7-7267        Some services are not ready - see status condition for details   127m
+
+NAMESPACE   NAME                                                                     STATUS   ID                 CLUSTER          TYPE   CR TYPE   AGE
+cp4i        managementbackup.management.apiconnect.ibm.com/inst-apic-mgmt-7702cfdb   Ready    20240426-193219F   inst-apic-mgmt   full   record    119m
+
+NAMESPACE   NAME                                                    READY   STATUS    VERSION    RECONCILED VERSION   MESSAGE   AGE
+cp4i        portalcluster.portal.apiconnect.ibm.com/inst-apic-ptl   3/4     Pending   10.0.5.7                                  95m
+
+NAMESPACE   NAME        READY   STATUS    VERSION    RECONCILED VERSION   MESSAGE                                                                            AGE
+cp4i        inst-apic   3/7     Pending   10.0.5.7                        API Connect cluster installation in progress - see status conditions for details   128m
+
+NAMESPACE   NAME            READY   STATUS    VERSION    RECONCILED VERSION   AGE
+cp4i        inst-apic-a7s   5/5     Running   10.0.5.7   10.0.5.7-7267        95m
+
+NAMESPACE   NAME           READY   STATUS    VERSION    RECONCILED VERSION   AGE
+cp4i        inst-apic-gw   2/2     Running   10.0.5.7   10.0.5.7-7267        95m
+
+NAMESPACE   NAME             READY   STATUS    VERSION    RECONCILED VERSION   MESSAGE                                                          AGE
+cp4i        inst-apic-mgmt   18/19   Pending   10.0.5.7   10.0.5.7-7267        Some services are not ready - see status condition for details   127m
+
+NAMESPACE   NAME            READY   STATUS    VERSION    RECONCILED VERSION   MESSAGE   AGE
+cp4i        inst-apic-ptl   3/4     Pending   10.0.5.7                                  95m
+
+
+20240426163158 - [INFO]:> [COMMAND #10]: ¿CUANTAS INSTANCIAS DE: 'EVENT-STREAMS' SE TIENE INSTALADO?
+No resources found
+
+
+20240426163158 - [INFO]:> [COMMAND #11]: ¿CUANTO STORAGE (PV) SE TIENE ASIGNADO POR CADA NODO INSTALADO?
+NODE: 10.184.15.94 \t CAPACITY: 20Gi
+NODE: 10.184.15.119 \t CAPACITY: 20Gi
+NODE: 10.184.15.97 \t CAPACITY: 200Gi
+NODE: 10.184.15.94 \t CAPACITY: 120Gi
+NODE: 10.184.15.119 \t CAPACITY: 20Gi
+NODE: 10.184.15.97 \t CAPACITY: 20Gi
+NODE: 10.184.15.97 \t CAPACITY: 20Gi
+NODE: 10.184.15.119 \t CAPACITY: 20Gi
+NODE: 10.184.15.119 \t CAPACITY: 20Gi
+NODE: 10.184.15.94 \t CAPACITY: 20Gi
+NODE: 10.184.15.119 \t CAPACITY: 20Gi
+NODE: 10.184.15.94 \t CAPACITY: 20Gi
+NODE: 10.184.15.94 \t CAPACITY: 20Gi
+NODE: 10.184.15.94 \t CAPACITY: 20Gi
+NODE: 10.184.15.97 \t CAPACITY: 20Gi
+NODE: 10.184.15.97 \t CAPACITY: 20Gi
+NODE: 10.184.15.97 \t CAPACITY: 20Gi
+NODE: 10.184.15.94 \t CAPACITY: 20Gi
+NODE: 10.184.15.94 \t CAPACITY: 100Gi
+NODE: 10.184.15.94 \t CAPACITY: 100Gi
+
+
+20240426163158 - [INFO]: ******************** [FINISH] ********************
